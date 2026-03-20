@@ -3,12 +3,13 @@
 mate <- c(39,43,21,64,57,47,28,75,34,52)
 calculo <- c(65,78,52,82,92,89,73,98,56,75)
 
-plot(mate,calculo, col= "red",pch=11,lwd=10,
-abline(lm(calculo~mate),col="blue",lwd=4))
+plot(mate,calculo, col= "red",pch=11,lwd=10)
+abline(lm(calculo~mate),col="blue",lwd=5)
 
 model <- lm(calculo~mate) # y~x
 summary(model)
 coef(model)
+
 
 
 
